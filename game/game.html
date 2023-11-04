@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LotD Game Page</title>
+    <!--Link to JS code -->
+    <script src="gamecode.js"></script>
+    <!--Link to CSS styles-->
+    <link rel="stylesheet" href="game.css">
+    <!--Link for favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <!--Button to go to homepage-->
+    <button onclick="window.location.href='game_info.html'">
+        Go to game info Page!
+    </button>
+    <br>
+    <br>
+    <!--Dropdown for die type-->
+    <label for="die">Choose a die:</label>
+    <select name="die" id="die">
+        <option value="4">d4</option>
+        <option value="6">d6</option>
+        <option value="8">d8</option>
+        <option value="20">d20</option>
+    </select>     
+    <br>
+    <br>
+    <!--Dropdown for mode type-->
+    <label for="mode">Choose a mode:</label>
+    <select name="mode" id="mode">
+        <option value="0">Average</option>
+        <option value="1">Sum</option>
+        <option value="2">Min</option>
+        <option value="3">Max</option>
+    </select> 
+    <br>
+    <br>
+    <!--Text box for number of die-->
+    <label for="die_num">Number of Die:</label>
+    <input type="number" id="die_num" name="die_num" style="width: 50px;" value="5">
+    <!--Text box for goal ammount-->
+    <label for="goal">Goal:</label>
+    <input type="number" id="goal" name="goal" style="width: 50px;">
+    <!--Text box for grace value-->
+    <label for="grace">Grace %:</label>
+    <input type="number" id="grace" name="grace" style="width: 50px;" value="15">
+    
+    <br>
+    <br>
+    <!--Button to play game-->
+    <button onclick="playGame()">
+        Play Game!
+    </button>
+    <!--This text is adjusted via JS-->
+    <h3>
+        <!--Text upon error-->
+        <error id="error"></error>
+        <p id="error_txt"></p>
+        <!--Text upon lsoe-->
+        <lose id="lose"></lose>
+        <!--Text upon win-->
+        <win id="win"></win>
+    </h3>
+    <h4>
+        Stats:
+    </h4>
+    <!--Empty text for results value-->
+    <results id="results"></results>
+
+    <footer>
+        <!--UAT Logo-->
+        <img src="https://www.uat.edu/themes/uat/images/uat-logo.png">
+    </footer>
+</body>
+</html>

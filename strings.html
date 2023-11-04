@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src = "nav.js"></script>
+    <title>Strings</title>
+</head>
+<!-- Navigation, loads from nav.js -->
+<nav id="nav">
+
+</nav>
+
+<!-- Header 1, with a class of validation for style in css -->
+<h1 class="validation">
+    String Validation
+</h1>
+
+<!-- class for style in css, and on load to load the navigation from nav.js -->
+<body class="strings" onload="loadnav('');">
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Lable and input box for the first name -->
+    <lable label for="f_name">First Name:</label>
+    <input type="text" id="f_name" name="f_name" style="width: 100px;"><br><br>
+    
+    <!-- Lable and input box for the last name -->
+    <lable label for="l_name">Last Name:</label>
+    <input type="text" id="l_name" name="l_name" style="width: 100px;"><br><br>
+    
+    <!-- Lable and input box for the zip code -->
+    <lable label for="zip">Zip Code:</label>
+    <input type="number" id="zip" name="zip" style="width: 75px;"> <br><br>
+    
+    <button onclick="submit()"> 
+        Submit
+    </button><br><br>
+    
+    <!-- lable and input box for the palindrome -->
+    <lable lable for="palindrome">Palindrome Checker</lable>
+    <!-- Palindrome uses the onchange function to have the check run on change, rather than on submit -->
+    <input type="text" id="palindrome" name="palindrome " style="width: 100px" onchange="palindrome()"> <br><br>
+
+    
+    <!-- submit button to run the submit function in js -->
+
+</body>
+</html>

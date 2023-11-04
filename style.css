@@ -1,0 +1,27 @@
+nav{
+    height: 30px;
+    width: 25%;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+    font-size: large;
+}
+header{
+    align-content: center;
+    padding-left: 30%;
+    width: 500px;
+    height: 100px;
+}
+
+body{
+    background-image: linear-gradient(rgb(243, 177, 177), rgb(238, 213, 192), rgb(233, 243, 177), rgb(177, 243, 182), rgb(177, 187, 243), rgb(218, 177, 243));
+}
+.strings{
+    background-image: linear-gradient(rgb(243, 177, 177), rgb(238, 213, 192), rgb(233, 243, 177), rgb(177, 243, 182), rgb(177, 187, 243), rgb(218, 177, 243));
+    height: 1000px;
+}
+
+.validation{
+    margin-right: 25%;
+    text-align: center;
+}

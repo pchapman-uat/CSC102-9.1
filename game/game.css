@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(rgb(0,0,0), rgb(48, 48, 48),rgb(0,0,0));
+    color: white;
+}
+
+h1{
+    font-family: AsalViralDemo;
+    font-size: 100px;
+    text-align: center;
+}
+error{
+    color: orange;
+}
+lose{
+    color: red;
+}
+win{
+    color: lime;
+}
+footer{
+    text-align: right;
+}
+
+@font-face{
+    font-family: AsalViralDemo;
+    src: url("AsalViralDemo.otf")
+}
